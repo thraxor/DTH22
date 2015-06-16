@@ -2,7 +2,7 @@
 
 import os
 import re
-import xively
+#import xively
 import subprocess
 import time
 import datetime
@@ -10,7 +10,7 @@ import httplib
 import urllib
 import sys
 
-import MySQLdb
+#import MySQLdb
 
 temperature = 0
 humidity = 0
