@@ -17,7 +17,7 @@ import urllib2
 
 #input parameters for different users
 apikey = "QRBAK77J7DZPFJ6D" #API key form ThingSpeak //sys.argv[1]
-time_sleep = 100
+time_sleep = 100 #default time between measurements
     
 def getSensorData():
     RH, T = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 23)
