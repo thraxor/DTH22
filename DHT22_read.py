@@ -15,7 +15,9 @@ from time import sleep
 import Adafruit_DHT
 import urllib2
 
+#input parameters for different users
 apikey = "QRBAK77J7DZPFJ6D" #API key form ThingSpeak //sys.argv[1]
+time_sleep = 100
     
 def getSensorData():
     RH, T = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 23)
@@ -39,7 +41,7 @@ def main():
                                 "&field1=%s&field2=%s" % (T, RH))
             print f.read()
             f.close()
-            sleep(115)
+            sleep(time_sleep)
         except:
             print 'exiting.'
             break
