@@ -29,19 +29,23 @@ def getSensorData():
     BMP_sea_pres = sensor.read_sealevel_pressure() # The sea-level pressure
     
     # return dict
-    return (str(DTH_RH), str(DTH_T), str(BMP_temp), str(BMP_pres), str(BMP_alt), str(BMP_sea_pres))
+    return (DTH_RH, DTH_T, BMP_temp, BMP_pres, BMP_alt, BMP_sea_pres)
     
 # main() function
 def main():
-    print 'starting measurements...'
+    print 'Starting Measurements...'
 
 #    baseURL = 'https://api.thingspeak.com/update?api_key=%s' % apikey #sys.argv[1]
    
     while True:
         try:
             DTH_RH, DTH_T , BMP_temp, BMP_pres, BMP_alt, BMP_sea_pres = getSensorData()
-            print DTH_RH, DTH_T
-            print BMP_temp, BMP_pres, BMP_alt, BMP_sea_pres
+            print 'Temp = {0:0.2f} *C'.format(DTH_T)
+            print DTH_RH
+            print BMP_temp
+            print BMP_pres
+            print BMP_alt 
+            print BMP_sea_pres
             sleep(time_sleep)
         except:
             print 'something wrong, exiting...'
