@@ -15,7 +15,7 @@ import Adafruit_BMP.BMP085 as BMP085
 
 #input parameters for different users
 #apikey = "QRBAK77J7DZPFJ6D" 	#API key form ThingSpeak //sys.argv[1]
-time_sleep = 100 		#default time between measurements
+time_sleep = 10 		#default time between measurements
     
 def getSensorData():
     DTH_RH, DTH_T = Adafruit_DHT.read_retry(Adafruit_DHT.DHT22, 23)
