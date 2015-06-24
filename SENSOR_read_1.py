@@ -1,11 +1,12 @@
 """
-dht11_thingspeak.py
 
-Temperature/Humidity monitor using Raspberry Pi and DHT11. 
+
+Temperature/Humidity monitor using Raspberry Pi2 and DHT22. 
+Barometrics (air preasure) and temperature monitor using BMP180.
 Data is displayed at thingspeak.com
 
-Author: Mahesh Venkitachalam
-Website: electronut.in
+Author: Tommi Sundqvist
+
 
 """
 
