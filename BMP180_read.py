@@ -43,6 +43,7 @@ def main():
             print 'Air Preasure = {0:0.2f} Pa'.format(BMP_pres)
             print 'Altitude = {0:0.2f} m'.format(BMP_alt)
             print 'Air Preasure (Sea Level) Pa'.format(BMP_sea_pres)
+            print " "
             sleep(time_sleep)
         except:
             print 'something wrong, exiting...'
